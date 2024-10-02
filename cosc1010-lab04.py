@@ -101,19 +101,18 @@ min_temps = [
 a = (0)
 b = (0)
 c = (0)
-for temps in max_temps:
-    a += temps
+d = (0)
+e = (0)
+f = (0)
+for index in range (len(min_temps)):
+    a += max_temps[index]
     b += 1
     c = (a/b)
+    d += min_temps[index]
+    e += 1
+    f = (d/e)
 print (c)
-
-for temps in min_temps:
-    a += temps
-    b += 1
-    c = (a/b)
-print (c)
-
-        
+print (f)        
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 x = (0)
