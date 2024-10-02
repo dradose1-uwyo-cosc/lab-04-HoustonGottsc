@@ -3,7 +3,7 @@
 # Submission Date
 # Lab 04 
 # Lab Section: 14
-# Sources, people worked with, help given to: Jack Zweibelson
+# Sources, people worked with, help given to: Jack Zweibelson, Koen myers
 # your
 # comments
 # here
@@ -116,6 +116,13 @@ print (c)
         
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
-print (max(max_temps))
-print (min(min_temps))
-
+x = (0)
+for temps in max_temps:
+    if temps>x:
+        x=temps
+y = (0)
+for temps in min_temps:
+    if temps<y:
+        y=temps
+print (x)
+print (y)
